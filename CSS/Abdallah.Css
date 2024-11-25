@@ -1,0 +1,406 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 100px;
+}
+img {
+    width: 100%;
+}
+
+body {
+    color: var(--text-color);
+}
+ header {
+    position: fixed;
+    width: 100%;
+    top 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background: var(--text-color); 
+    background: #de9337;
+     border-bottom: 2px solid #ffffff;
+}
+
+.logo img {
+    width: 60px;
+}
+.logo h1 {
+    color: #fffffe;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.navber {
+    display: flex;
+}
+ .navber a { 
+    padding: 8px 18px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navber a:hover {
+    background: #000000;
+    border-bottom: 1.5px solid #fff;
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+}
+.header-icon {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+}
+.header-icon .bx {
+    color: var(--bg-color);
+
+}
+.header-icon .bx:hover {
+    color: var(--main-color);
+}
+
+
+.home {
+    width: 100%;
+    min-height: 100%;
+    background: url(img/IMG-20241101-WA0004.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-text .home-img  {
+    width: 50px;
+}
+.home-img {
+    width: 680px;
+    padding: 20px;
+    margin: auto;
+  
+}
+.home-text h1 {
+    font-size: 3.4rem;
+    color: #cf9d5f;
+    letter-spacing: 1px;
+}
+.home-text p {
+    font-size: 15px;
+    color: #fff;
+    margin: 0.5rem 0 1.4rem;
+}
+.home-text .btn {
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background: #dd9742;
+    color: #fff;
+    font-weight: 500;
+}
+.home-text .btn:hover {
+    background: #d9b07d;
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    gap: 1.5rem;
+}
+.about img img {
+    border-radius: 0.5rem;
+}
+.about-text h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    direction: rtl;
+}
+.about-text p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1.1rem;
+    direction: rtl;
+}
+.about-text .bttoon {
+    padding: 10px 40px;
+    margin-left: 500px;
+    border-radius: 0.3rem;
+    background: #dd9742;
+    color: #fff;
+    font-weight: 500; 
+}
+.bttoon:hover {
+    background: #d9b07d;
+} 
+.cards {
+    text-align: center;
+}
+.cards h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #d99848;
+}
+.products-container {
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.products-container .box:hover {
+    background-color: rgb(166, 124, 66);
+    transition: 0.2s;
+    transform: translate(10px , -10px);
+}
+.products-container .box:hover h3{
+    color: rgb(4, 6, 126);
+}
+.products-container .box p{
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    line-height: 25px;
+}
+.products-container .box {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;  
+}
+ .products-container img { 
+     width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 0.5rem; 
+} 
+.products-container .box h3 {
+    direction: rtl;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.5rem 0 0.5rem;
+    color: #000000;
+}
+.products-container .box p {
+    direction: rtl;
+    font-size: 1.2rem;
+     font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem;
+}
+.home-text .span {
+    color: #de9337;
+    font-size: 4rem;
+}
+
+#contact {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-top: 30px;
+  direction: rtl;
+  font-size: 1.2rem;
+}
+
+#contact h2 {
+  color: #000000;
+    text-align: center;
+    background-color: #d99848;
+    margin: 20px 150px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+#contact ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+#contact a {
+  color: #13488e;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+ ___________________________________
+.loginInf{
+    width: 100%;
+    height: 92.8vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    direction: rtl;
+    
+}
+.loginInf .login {
+    position: relative;
+    left: 600px;
+    width: 400px;
+    padding: 25px;
+    background-color: #dcdedc61;
+    box-shadow: rgba(0, 0, 0, 0.219) 0px 10px 30px 0px;
+    animation: fade 0.5s 0.9s backwards ;
+    direction: rtl;
+}
+.loginInf .login h2 , 
+.loginInf .login p{
+    color: rgb(0, 0, 0);
+    margin-bottom: 13px;
+    font-size: 32px;
+}
+.loginInf .login h2 span{
+    color: rgb(132, 74, 8);
+    font-size: 35px;
+}
+.loginInf .login .userForm ,
+.loginInf .login .passForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.loginInf .login .userForm label ,
+.loginInf .login .passForm label{
+    margin-bottom: 5px;
+    color:  var(--color-black-1);
+    font-size: 15px;
+}
+.loginInf .login .userForm input ,
+.loginInf .login .passForm input{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition-duration: 0.3s;
+}
+.loginInf .login .userForm input:focus ,
+.loginInf .login .passForm input:focus{
+     border-bottom: 4px solid var(--PrimaryColor);
+}
+.loginInf .login .userForm input:hover ,
+.loginInf .login .passForm input:hover{
+    border-bottom: 4px solid rgb(133, 77, 9);
+    transition: 0.2s;
+}
+.loginInf .login .againPass ,
+.loginInf .login .signup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.loginInf .login .againPass p,
+.loginInf .login .signup p{
+    font-size: 13px;
+    color: var(--color-black-1);
+}
+.loginInf .login .againPass a,
+.loginInf .login .signup a{
+    font-size: 15px;
+    color: blue;
+}
+.loginInf .login .logButton{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.loginInf .login .logButton input{
+    width: 100%;
+    color: white;
+    background-color: rgb(156, 119, 18);
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.loginInf .login .logButton input:hover{
+    background-color: rgb(16, 43, 150);
+    transition: 0.3s;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin: 10px;
+    direction: rtl;
+    text-align: center;
+}
+ .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-top: 2px solid #444;
+} 
+.contact-info {
+    flex: 1;
+    min-width: 200px;
+    text-align: right;
+}  
+.footer-center {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+} 
+ .location-hours {
+    flex: 1;
+   min-width: 200px;
+    text-align: left ; 
+    padding-left: 10px;
+} 
+
+footer h3 {
+    font-size: 18px;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+footer p{
+    margin: 5px 0;
+}
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 5px;
+}
+footer a:hover {
+    text-decoration: underline;
+} 
+.contact-info, .location-hours, .footer-center {
+    text-align: center;
+}
+.container-hero ul a:hover{
+    background-color: rgb(100, 9, 123);
+    color: white;
+    transition: 0.3s;
+}
+.container-hero ul .active{
+    background-color:rgb(74, 7, 91);
+    color: white;
+}
+
